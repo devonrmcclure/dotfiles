@@ -104,7 +104,7 @@ alias pacclean="sudo pacman -Rns $(pacman -Qtdq)"
 alias yaou="yaourt -Syu"
 alias yaoi="yaourt -S"
 alias yaoui="yaourt -Rns"
-alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
