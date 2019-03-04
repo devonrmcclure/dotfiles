@@ -181,3 +181,4 @@ exec --no-startup-id flameshot
 exec_always --no-startup-id feh --bg-scale Backgrounds/4k-wallpaper-android-wallpaper-astro-1146134.jpg
 exec_always --no-startup-id compton
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id setxkbmap -option caps:escape
