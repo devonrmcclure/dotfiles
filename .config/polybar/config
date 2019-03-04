@@ -58,7 +58,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = date
-modules-right = alsa memory cpu wlan battery
+modules-right = alsa memory cpu cputemp wlan battery
 
 tray-position = none
 tray-padding = 2
@@ -139,6 +139,15 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 ; Separator in between workspaces
 ; label-separator = |
 
+[module/cputemp]
+type = custom/script
+exec = sensors | grep "CPU" | cut -c 18-24
+interval = 2
+format-prefix = "TEMP "
+format-prefix-foreground = ${colors.foreground-alt}
+format = <label>
+format-underline = #f90000
+label = %output%
 
 [module/xbacklight]
 type = internal/xbacklight
