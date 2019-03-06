@@ -182,3 +182,10 @@ exec_always --no-startup-id feh --bg-scale Backgrounds/4k-wallpaper-android-wall
 exec_always --no-startup-id compton
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id setxkbmap -option caps:escape
+
+exec --no-startup-id termite --name dropdown &
+
+bindsym $mod+i [instance="dropdown"] scratchpad show, move position center
+
+for_window [instance="dropdown"] floating enable, resize set 1600 1200, \
+    move scratchpad
