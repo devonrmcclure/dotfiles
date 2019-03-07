@@ -56,7 +56,7 @@ font-0 = FontAwesome:size=10;0
 font-1 = Fira Code:pixelsize=10;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = i3
+modules-left = i3 filesystem
 modules-center = date
 modules-right = alsa memory cpu cputemp wlan battery
 
@@ -77,6 +77,26 @@ tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/filesystem]
+type = internal/fs
+
+; Mountpoints to display
+mount-0 = /
+mount-1 = /home
+
+; Seconds to sleep between updates
+; Default: 30
+interval = 10
+
+; Display fixed precision values
+; Default: false
+fixed-values = true
+
+; Spacing between entries
+; Default: 2
+spacing = 4
+label-mounted = %mountpoint%: %free% free
 
 [module/bspwm]
 type = internal/bspwm

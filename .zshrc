@@ -105,6 +105,7 @@ alias yaou="yaourt -Syu"
 alias yaoi="yaourt -S"
 alias yaoui="yaourt -Rns"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias pacu-mirrors="sudo reflector --verbose --country Canada --country UnitedStates --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
