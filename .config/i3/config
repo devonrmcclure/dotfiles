@@ -137,6 +137,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # assign programs to certain workspaces
+assign [class="Code"] $ws1
 assign [class="Termite"] $ws2
 assign [class="Google-chrome" instance="^(?!messenger.com$)"] $ws3
 assign [class="discord"] $ws10
@@ -180,6 +181,7 @@ bindsym $mod+r mode "resize"
 bindsym --release $mod+Shift+Print exec "flameshot full -c -p ~/Pictures/screenshots"
 bindsym --release Print exec "flameshot full -c"
 bindsym --release $mod+Print exec "flameshot gui"
+bindsym --release $mod+b exec "code ~/Projects/Apis/batteries-api"
 
 
 focus_follows_mouse no
