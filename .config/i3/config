@@ -198,5 +198,5 @@ exec --no-startup-id termite --name dropdown &
 
 bindsym $mod+i [instance="dropdown"] scratchpad show, move position center
 
-for_window [instance="dropdown"] floating enable, resize set 1600 1200, \
+for_window [instance="dropdown"] floating enable, resize set 1900 1500, \
     move scratchpad

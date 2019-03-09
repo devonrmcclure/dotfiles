@@ -106,6 +106,15 @@ alias yaoi="yaourt -S"
 alias yaoui="yaourt -Rns"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias pacu-mirrors="sudo reflector --verbose --country Canada --country UnitedStates --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+function san-au()
+{
+  echo "- /u/$1 - Created $2 - $3" >> ~/Documents/stolen-articles-network/users.md;
+}
+function san-as()
+{
+  echo "- $1" >> ~/Documents/stolen-articles-network/sites.md;
+}
+
 
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
