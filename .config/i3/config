@@ -200,3 +200,4 @@ bindsym $mod+i [instance="dropdown"] scratchpad show, move position center
 
 for_window [instance="dropdown"] floating enable, resize set 1900 1500, \
     move scratchpad
+
